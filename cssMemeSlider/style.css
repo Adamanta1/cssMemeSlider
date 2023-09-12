@@ -1,1 +1,114 @@
-мя
+@font-face {
+    font-display: swap; 
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    src: url("assets/fonts/Montserrat-Light.ttf");
+}
+
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    color:#000;
+  }
+
+.main-wrapper {
+    width: 1000px;
+    height: 700px;
+    margin: 0 auto;
+}
+
+.slider-img {
+    /*width: 1000px;
+    height: 500px;*/
+    display: flex;
+    flex-direction: column;
+}
+
+.lower-line {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.radio-buttons {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+input {
+    appearance: none;
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+    border: 1px solid #00FFFF;
+    cursor: pointer;
+}
+
+input:checked {
+    background: #00FFFF;
+    border: none;
+}
+
+label {
+    cursor: pointer;
+    padding: 8px;
+}
+/*
+.img1 {
+    background: url(../assets/meme1.jpg) no-repeat center;
+}
+
+.img2 {
+    background: url(../assets/meme2.jpg) no-repeat center;
+    opacity: 0;
+}
+
+.img3 {
+    background-color: #DC143C;
+    opacity: 0;
+}
+
+.img4 {
+    background-color: #2F4F4F;
+    opacity: 0;
+}
+
+#point1:checked ~ .control label:nth-of-type(1),
+#point2:checked ~ .control label:nth-of-type(2),
+#point3:checked ~ .control label:nth-of-type(3), 
+#point4:checked ~ .control label:nth-of-type(4) {
+	background-color: #00FFFF;
+}
+
+
+#point1:checked ~ .slider > .img1,
+#point2:checked ~ .slider > .img2,
+#point3:checked ~ .slider > .img3, 
+#point4:checked ~ .slider > .img4 {
+	opacity: 1;
+	z-index: 1;
+    transform: none;
+}
+
+
+.slides{
+    display: flex;
+    justify-content: center;
+    transform: rotate(55deg);
+    transition: 1s;
+}*/
