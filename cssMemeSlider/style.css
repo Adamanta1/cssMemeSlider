@@ -19,8 +19,8 @@ body {
     font-style: normal;
     font-weight: 400;
     line-height: 1.5rem;
-    color: #D9B3FF;
-    background-color: #EBCCFF;
+    color: #717E8E;
+    background-color: #717E8E;
   }
 
 input {
@@ -51,13 +51,13 @@ input {
     justify-content: flex-start;
     align-items: center;
     overflow: hidden;
-    background: #D9B3FF;
+    background: #717E8E;
 }
 
 .slides {
     min-width: 100%;
     min-height: 100%;
-    background-color: #D9B3FF;
+    background-color: #717E8E;
     display: flex;
     justify-content: center;
     transition: all linear 0.6s;
@@ -90,7 +90,7 @@ label {
     border-radius: 50%;
     width: 1.25rem;
     height: 1.25rem;
-    border: 0.063rem solid #D9B3FF;;
+    border: 0.063rem solid #717E8E;
     cursor: pointer;
 }
 
@@ -123,7 +123,7 @@ p {
 #point2:checked ~ .lower-line label:nth-of-type(2) .dot,
 #point3:checked ~ .lower-line label:nth-of-type(3) .dot,
 #point4:checked ~ .lower-line label:nth-of-type(4) .dot {
-    background: #D9B3FF;
+    background: #717E8E;
 }
 
 #point1:checked ~ .slider-img .slides {
