@@ -98,6 +98,11 @@ label {
     background: #FFF;
 }
 
+.dot:active {
+    background: #8F6E98;
+    border-color: #8F6E98;
+}
+
 .text-storage{
     min-width: 70%;
     overflow: hidden;
