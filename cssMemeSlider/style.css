@@ -1,0 +1,196 @@
+@font-face {
+    font-family: Montserrat;
+    src: url("./assets/fonts/Montserrat-Light.ttf");
+}
+
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Montserrat;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5rem;
+    color: #717E8E;
+    background-color: #717E8E;
+  }
+
+input {
+    display: none;
+}
+
+.main-wrapper {
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #000;;
+}
+
+.slider-img {
+    width: 94%;
+    height: 60%;
+    overflow: hidden;
+    padding: 3%;
+}
+
+.inner {
+    max-width: 100%;
+    max-height: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    overflow: hidden;
+    background: #717E8E;
+}
+
+.slides {
+    min-width: 100%;
+    min-height: 100%;
+    background-color: #717E8E;
+    display: flex;
+    justify-content: center;
+    transition: all linear 0.6s;
+}
+
+.image {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.lower-line {
+    display: flex;
+    width: 94%;
+    justify-content: space-between;
+    padding: 0 3% 3%;
+}
+
+.labels {
+    min-width: 30%;
+    display: flex;
+    justify-content: end;
+}
+
+label {
+    padding: 0 3% 5%;
+    cursor: pointer;
+}
+
+.dot {
+    border-radius: 50%;
+    width: 1.25rem;
+    height: 1.25rem;
+    border: 0.063rem solid #717E8E;
+    cursor: pointer;
+}
+
+.dot:hover {
+    background: #FFF;
+}
+
+.dot:active {
+    background: #8F6E98;
+    border-color: #8F6E98;
+}
+
+.text-storage{
+    min-width: 70%;
+    overflow: hidden;
+}
+
+.slider-text {
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.slides1 {
+    min-width: 100%;
+    transition: all linear 0.6s;
+    white-space: nowrap;
+}
+
+p {
+    margin-top: 0;
+}
+
+#point1:checked ~ .lower-line label:nth-of-type(1) .dot,
+#point2:checked ~ .lower-line label:nth-of-type(2) .dot,
+#point3:checked ~ .lower-line label:nth-of-type(3) .dot,
+#point4:checked ~ .lower-line label:nth-of-type(4) .dot {
+    background: #717E8E;
+    cursor: default;
+}
+
+#point1:checked ~ .lower-line label:nth-of-type(1),
+#point2:checked ~ .lower-line label:nth-of-type(2),
+#point3:checked ~ .lower-line label:nth-of-type(3),
+#point4:checked ~ .lower-line label:nth-of-type(4) {
+    cursor: default;
+}
+
+#point1:checked ~ .slider-img .slides {
+    transform: translateX(0%);
+}
+
+#point2:checked ~ .slider-img .slides {
+    transform: translateX(-100%);
+}
+
+#point3:checked ~ .slider-img .slides {
+    transform: translateX(-200%);
+} 
+
+#point4:checked ~ .slider-img .slides {
+    transform: translateX(-300%);
+}
+
+#point1:checked ~ .lower-line .slides1 {
+    transform: translateX(0%);
+}
+
+#point2:checked ~ .lower-line .slides1 {
+    transform: translateX(-100%);
+}
+
+#point3:checked ~ .lower-line .slides1 {
+    transform: translateX(-200%);
+} 
+
+#point4:checked ~ .lower-line .slides1 {
+    transform: translateX(-300%);
+}
+
+@media all and (max-width: 768px) {
+
+    body {
+        font-size: 1.3rem;
+    }
+
+    .lower-line {
+        flex-direction: column;
+    }
+
+    .labels {
+        justify-content: center;
+        order: -1;
+        margin: 3% 0;
+    }
+
+    .slider-img {
+        padding-bottom: 0;
+    }
+    label {
+        padding: 2%;
+    }
+}
